@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": ["fundraiseup"],
+  "keywords": [
+    "fundraiseup"
+  ],
   "author": "Igor Isaev",
   "license": "ISC",
   "dependencies": {
@@ -14,5 +16,8 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "prettier": "2.7.1"
   }
-}  
+}

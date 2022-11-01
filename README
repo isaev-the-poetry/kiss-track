@@ -3,22 +3,22 @@ Fundraiseup Fullstack test task
 // Installation:
 // create .ENV file, and place MONGODB_URI variable with database uri like "mongodb://root:example@localhost:27017/"
 
-touch .ENV 
+touch .ENV
 echo 'MONGODB_URI="mongodb://root:example@localhost:27017/"' > .ENV
 npm install
 npm start
 
-/**
- *  Tracker browser code /src/front
- *  Tracker server code /src/server
- *  Project is just demo, no compiling/packing etc
- * 
- * Optional requirements:
- *  "Make it so that when you click on the link, all events have time to reach the backend before moving to a new page."
- *  -> Sloved with beacon API.
- *  "Make sure that the CORS request does not preflight the OPTIONS request."
- *  -> Achived by making POST request as plain text.
- *  "Write your tracker embed snippet on the page"
- *  -> My client code is small. It's easier to compress it and add it to the page inline, which will reduce the load time.
- * 
- */
+/\*\*
+
+- Tracker browser code /src/front
+- Tracker server code /src/server
+- Project is just demo, no compiling/packing etc
+-
+- Optional requirements:
+- "Make it so that when you click on the link, all events have time to reach the backend before moving to a new page."
+- -> Sloved with beacon API.
+- "Make sure that the CORS request does not preflight the OPTIONS request."
+- -> Achived by making POST request as plain text.
+- "Write your tracker embed snippet on the page"
+- -> My client code is small. It's easier to compress it and add it to the page inline, which will reduce the load time.
+- \*/

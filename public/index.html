@@ -1,26 +1,32 @@
 <html>
-<head>
+  <head>
     <title>Demo page</title>
     <script src="http://localhost:8001/"></script>
     <script>
-        tracker.track('pageview');
-        tracker.track('test', 'one', 'two', 'three');
+      tracker.track("pageview");
+      tracker.track("test", "one", "two", "three");
 
-        // setTimeout( () => tracker.track('delayed event 1') , 500)
-        // setTimeout( () => tracker.track('delayed event 2') , 500)
-        // setTimeout( () => tracker.track('delayed event 3') , 600)
-        // setTimeout( () => tracker.track('delayed event 4') , 600)
+      // setTimeout( () => tracker.track('delayed event 1') , 500)
+      // setTimeout( () => tracker.track('delayed event 2') , 500)
+      // setTimeout( () => tracker.track('delayed event 3') , 600)
+      // setTimeout( () => tracker.track('delayed event 4') , 600)
 
-        // setTimeout( () => tracker.track('delayed event 5') , 1200)
-        // setTimeout( () => tracker.track('delayed event 6') , 1200) 
+      // setTimeout( () => tracker.track('delayed event 5') , 1200)
+      // setTimeout( () => tracker.track('delayed event 6') , 1200)
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <button onclick="tracker.track('click-button')">Click me</button>
     <ul>
-        <li><a href="/" onclick="tracker.track('click-link', 'root')">Root</a></li>
-        <li><a href="/1.html" onclick="tracker.track('click-link', '1')">1.html</a></li>
-        <li><a href="/2.html" onclick="tracker.track('click-link', '2')">2.html</a></li>
+      <li>
+        <a href="/" onclick="tracker.track('click-link', 'root')">Root</a>
+      </li>
+      <li>
+        <a href="/1.html" onclick="tracker.track('click-link', '1')">1.html</a>
+      </li>
+      <li>
+        <a href="/2.html" onclick="tracker.track('click-link', '2')">2.html</a>
+      </li>
     </ul>
-    </body>
+  </body>
 </html>
